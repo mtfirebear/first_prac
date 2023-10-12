@@ -37,7 +37,7 @@ elif args.action == "linear":
         class LinearRegression(nn.Module):
             def __init__(self):
                 super(LinearRegression, self).__init__()
-                self.linear = nn.Linear(1, 1)
+                self.linear = nn.Linear(2, 2)  # 입력 및 출력 차원을 2로 변경
 
             def forward(self, x):
                 return self.linear(x)
@@ -60,13 +60,7 @@ elif args.action == "linear":
         print("선형 회귀 모델 파라미터:")
         for name, param in model.named_parameters():
             if param.requires_grad:
-                print(f"{name}: {param.data.item()}")
-
-        # 예측 결과 출력
-        with torch.no_grad():
-            predicted = model(x)
-            for i in range(len(predicted)):
-                print(f"예측 결과 {i + 1}: {predicted[i][0].item()}")
+                print(f"{name}: {param.data}")
     else:
         print("Both sets of coordinates (x1, y1, x2, y2) are required for linear regression.")
 else:
