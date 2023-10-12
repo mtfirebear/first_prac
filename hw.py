@@ -1,4 +1,4 @@
-print(201927518 + "박동윤")import argparse
+import argparse
 import torch
 import torch.optim as optim
 import torch.nn as nn
