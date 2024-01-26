@@ -34,7 +34,7 @@ class ModelEvaluator:
         print('Confusion Matrix:')
         print(confusion)
 
-        self.save_results_to_csv(accuracy, precision, recall, f1, 'validation_results.csv')
+        #self.save_results_to_csv(accuracy, precision, recall, f1, 'validation_results.csv')
 
     def evaluate_test_data(self, rnk_value):
         # 모델로 예측
@@ -59,7 +59,7 @@ class ModelEvaluator:
         print('Confusion Matrix:')
         print(confusion)
 
-        self.save_results_to_csv(accuracy, precision, recall, f1, 'test_results.csv')
+        #self.save_results_to_csv(accuracy, precision, recall, f1, 'test_results.csv')
 
     def save_results_to_csv(self, accuracy, precision, recall, f1, filename):
         results_df = pd.DataFrame({
