@@ -6,7 +6,7 @@ from XGBoostModel import XGBoostModel
 def main():
 
     # 데이터 처리
-    data_processor = DataProcessor("/firebear_test/5th_TFT_df.csv")
+    data_processor = DataProcessor("/firebear_test/data.csv")
     data_processor.preprocess_data()
     data_processor.split_data()
 
