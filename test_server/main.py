@@ -6,7 +6,7 @@ from XGBoostModel import XGBoostModel
 def main():
 
     # 데이터 처리
-    data_processor = DataProcessor("C:/Users/USER/Desktop/TFT/5th_TFT_df.csv")
+    #data_processor = DataProcessor("C:/Users/USER/Desktop/TFT/5th_TFT_df.csv")
     data_processor = DataProcessor("/firebear_test/5th_TFT_df.csv")
 
     data_processor.preprocess_data()
